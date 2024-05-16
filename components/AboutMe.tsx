@@ -7,11 +7,13 @@ import { ReactTyped } from "react-typed";
 
 const AboutMe = () => {
   return (
-    <div className='flex justify-center flex-wrap mt-56'>
+    <section id="about">
+    <div className='flex justify-center flex-wrap '>
       <div className="flex justify-center flex-wrap-reverse">
         <div className="p-10 lg:flex-col gap-3 flex">
-          <button className="p-3 text-4xl border border-solid rounded-lg hover:scale-110 duration-150 "  style={{ border: '2px solid #36569C' }}>
-            <FontAwesomeIcon icon={faGithub} />
+          <button  className="p-3 text-4xl border border-solid rounded-lg hover:scale-110 duration-150 "  style={{ border: '2px solid #36569C' }}>
+            <a href='https://github.com/FRANK022530'>
+            <FontAwesomeIcon icon={faGithub} /></a>
           </button>
           <button className="p-3 text-4xl border border-solid rounded-lg hover:scale-110 duration-150" style={{ border: '2px solid #36569C' }}>
             <FontAwesomeIcon icon={faFacebook} />
@@ -53,6 +55,7 @@ const AboutMe = () => {
         </p>
       </div>
     </div>
+    </section>
   );
 }
 
